@@ -11,10 +11,10 @@
 
 Passion meets purpose in our fight against human-trafficking at *Seen & Heard*. This project is not just another endeavour; it's a representation of my heartfelt mission. Using my skills to combat social injustice in a relentless pursuit of freedom, safety and justice for all is my primary goal. Together, we can harness the power of technology to bring about meaningful change and ensure that every survivor knows that they are *Seen & Heard*.
 
-#### Our logo
+### Our logo
 The figures holding hands represent people of diverse backgrounds in a display of unity. The colours – *red and yellow, black and white* are inspired by the message love from the song *"Jesus Loves the Little Children"*. The animation of the figures jumping up and down together embodies our spirit of solidarity and support of one another.
 
-*__Jesus Loves the Little Children Song Lyrics__*  
+#### *__Jesus Loves the Little Children Song Lyrics__*  
 *Jesus loves the little children,  
 All the children of the world,  
 Red and yellow, black and white,  
