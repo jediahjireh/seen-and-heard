@@ -1,0 +1,210 @@
+<!-- added on to my code from Task 15 (HTML and CSS Webpage) -->
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <About Us | Seen & Heard>
+    </title>
+
+    <!-- link to index.scss file -->
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <!-- referenced https://www.cdnfonts.com/barlow.font
+        website referenced for link to content font file -->
+    <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+
+    <!-- referenced https://www.cdnfonts.com/hussar-4.font
+            website referenced for link to main font file -->
+    <link href="https://fonts.cdnfonts.com/css/hussar-4" rel="stylesheet">
+
+    <!-- link JQUERY to html file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- styling caters for display of form in Google Chrome
+        the form may appear differently in other browsers (such as Safari) -->
+    <div class="wrapper">
+        <header id="fixedHeader">
+            <!-- image 1 -->
+            <!-- logo -->
+            <img id="logoAnimate" src="images/logo.png" alt="Seen & Heard logo" width="110" />
+            <!-- index -->
+            <nav id="index">
+                <b>
+                    <!-- redirect to the other webpages -->
+                    <h4>&emsp; <a href="about-us.html">ABOUT US</a>
+                        &emsp;&emsp;&emsp; <a href="index.html">HOME</a>
+                        &emsp;&emsp;&emsp; <a href="contact-us.html">CONTACT US</a>
+                    </h4>
+                </b>
+            </nav>
+        </header>
+
+        <main class="lightMode">
+            <!-- dropdown menu -->
+            <header class="dropdown-menu">
+                <button class="menuBtn">Menu</button>
+                <nav class="dropdown-options">
+                    <!-- unordered list of menu options -->
+                    <ul>
+                        <!-- link to menu option webpages -->
+                        <li><a href="save-for-later.html">Earmarked Items</a></li>
+                        <li><a href="help.html">You can help!</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <br><br><br>
+
+            <!-- block 1 -->
+            <div id="aboutUs">
+                <h1 class="underlineYellow">
+                    ABOUT US
+                </h1>
+                <h5>
+                    At <i>Seen & Heard</i>, passion meets purpose in the fight against human-trafficking. With fierce
+                    determination, we
+                    aim to raise awareness, ignite change and provide support to survivors of this abhorrent crime. The
+                    heart of
+                    our organisation beats so that every survivor knows that they are not alone.
+                </h5>
+            </div>
+
+            <!-- block 2 -->
+            <h2 class="underlineYellow">
+                OUR MISSION
+            </h2>
+            <p>
+                Burning brightly to illuminate the darkness of human-trafficking, we are warriors of hope and committed
+                to
+                breaking the chains of exploitation and aiding survivor empowerment. Our mission is not a statement but
+                a
+                call to action from the depths of our souls - a call to find, retrieve and empower survivors.
+            </p>
+            <h3 class="underlineRed">
+                For survivors
+            </h3>
+            <p>
+                You have a voice. You are not a victim, you are a victor.
+                You are <i>Seen & Heard</i>! Resiliently reclaim
+                your life and empower yourself.
+            </p>
+
+            <h3 class="underlineRed">
+                For survivor supporters
+            </h3>
+
+            <p>
+                Let's strive to educate ourselves to recognise the signs of trafficking and how we can take action
+                responsibly. We need to educate our communities so that all are ready and able to provide support
+                services
+                to survivors of human-trafficking.
+            </p>
+
+            <h2 class="underlineYellow">
+                What do we do?
+            </h2>
+
+            <!-- unordered list -->
+            <ul>
+                <li>
+                    <h3 class="underlineRed">
+                        We create awareness:
+                    </h3>
+                </li>
+                <p>
+                    We aspire to ignite the flames of awareness that spread like wildfire, lighting up the hidden
+                    corners in
+                    which trafficking lurks, through various platforms to educate the public about the realities of
+                    human-trafficking and how they can help prevent it, while eradicating belief in the stereotypes or
+                    romanticising of this heinous crime that is traditionally portrayed through TV shows and fictional
+                    novels.
+                    Every voice must be heard, every life must be valued and every soul must be free.
+                </p>
+
+                <li>
+                    <h3 class="underlineRed">
+                        We advocate for justice:
+                    </h3>
+                </li>
+                <p>
+                    We stand together to wield our voices to demand accountability and be catalysts for change. Fighting
+                    daily
+                    for a world where traffickers face swift and severe consequences through stronger laws and better
+                    protections, we work to protect the rights of survivors in every corner of the world.
+                </p>
+                <li>
+                    <h3 class="underlineRed">
+                        We provide support services:
+                    </h3>
+                </li>
+                <p>
+                    Survivors have access to various resources, namely: hotlines, shelter, health care, legal aid,
+                    protection,
+                    counselling and vocational training. We walk alongside those ensnared by trafficking's grasp with
+                    open
+                    arms
+                    - survivors are seen and heard! Collaboration with law enforcement agencies, NGOs, essential
+                    workers,
+                    businesses and other contributors will allow for panoptic anti-trafficking strategies to be
+                    developed.
+                </p>
+            </ul>
+
+            <h2 class="underlineYellow">
+                Get involved
+            </h2>
+            <p>
+                Let's be the beacon of hope in a valley of darkness. <a href="contact-us.html"><b>Join us</b></a> in our
+                relentless
+                pursuit of freedom, safety
+                and justice for all. <a href="help.html"><b>We are stronger together</b></a> - a force to be reckoned
+                with!
+            </p>
+
+            <aside id="subscribeForm">
+                <!-- POST form -->
+                <!-- submit button form -->
+                <form action="/about-us.html" method="POST">
+                    <input type="email" placeholder="Email address" id="subscribeEmail" required> <br><br>
+                    <!-- alert is not displayed because of submit's default behaviour :
+                    <input type="submit" value="Subscribe to our newsletters" style="width: 350px; height: 50px;"> -->
+                    <button type="button" id="subscribeBtn" style="width: 350px; height: 50px;">
+                        <b>Subscribe to our newsletters</b>
+                    </button>
+                </form>
+                <br>
+            </aside>
+            <br>
+        </main>
+
+        <!-- bottom of webpage -->
+        <footer>
+            <br><br>
+            <div id="closing">
+                <!-- logo -->
+                <img class="logo" src="images/logo.png" alt="Seen & Heard logo" width="175" />
+                <h2 id="contactPrompt">
+                    <a href="contact-us.html">CONTACT US</a>
+                </h2>
+                <address id="copy">
+                    <h5>
+                        Made by <i>Jediah Jireh Naicker</i>
+                        <br>
+                        &copy; 2024
+                    </h5>
+                </address>
+            </div>
+        </footer>
+    </div>
+    <!-- link to JS file for webpage manipulation code -->
+    <script type="text/javascript" src="about-us.js"></script>
+    <!-- link to JS file for logo functionality and dropdown menu -->
+    <script type="text/javascript" src="functionality.js"></script>
+</body>
+
+</html>

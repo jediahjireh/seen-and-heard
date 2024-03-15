@@ -1,0 +1,422 @@
+/* NOTE :
+referenced my code from "copy-cat.html", "copy-cat.scss" and "_align-format.scss" in my "Task 14 (Cloned Webpage)" folder
+added on to and modified my code from Task 15 (HTML and CSS Webpage)
+images not accompanied with a link were designed by me (Jediah Jireh Naicker) using Canva
+referenced https://developers.google.com/fonts/docs/getting_started
+website referenced for guidance and information regarding font styles and formatting
+*/
+@import url("https://fonts.cdnfonts.com/css/barlow");
+@import url("https://fonts.cdnfonts.com/css/hussar-4");
+formatContent, #subscribeForm, #contactForm, #closing, #fixedHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fixedHeader {
+  background-color: rgb(0, 96, 250);
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+#fixedHeader img {
+  float: inline-start;
+}
+
+#index a {
+  color: rgb(247, 249, 250);
+  font-family: "Hussar", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+body {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(247, 249, 250);
+  box-sizing: border-box;
+  display: block;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.darkMode {
+  background-color: rgb(0, 3, 22);
+  color: rgb(247, 249, 250);
+  font-family: "Hussar", sans-serif;
+  width: 100%;
+}
+
+.lightMode {
+  background-color: rgb(247, 249, 250);
+  color: rgb(0, 3, 22);
+  font-family: "Hussar", sans-serif;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(0, 96, 250);
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hussar", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+footer {
+  background-color: rgb(0, 96, 250);
+  width: 100%;
+}
+
+#closing {
+  justify-content: space-between;
+  width: 99%;
+}
+#closing img {
+  margin-right: auto;
+}
+
+#copy {
+  font-weight: 500;
+  margin-left: auto;
+}
+
+#contactPrompt a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(247, 249, 250);
+}
+
+address {
+  font-style: normal;
+}
+
+main {
+  padding-top: 10%;
+}
+
+.underlineYellow {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgb(255, 250, 160);
+  text-decoration-thickness: 20px;
+  text-underline-offset: -93%;
+}
+
+.underlineRed {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgba(132, 4, 4, 0.2);
+  text-decoration-thickness: 10px;
+  text-underline-offset: -85%;
+}
+
+.underlineBlue {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgb(0, 96, 250);
+  text-decoration-thickness: 20px;
+  text-underline-offset: -82%;
+}
+
+.sector a {
+  color: rgb(132, 4, 4);
+  background-color: rgb(255, 250, 160);
+  background-size: contain;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgb(0, 3, 22);
+  padding: 10px;
+  text-align: left;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+.quoteHeader {
+  width: 100%;
+}
+
+#quotations {
+  text-align: center;
+  width: 100%;
+}
+
+.blockquote-footer {
+  color: rgb(255, 250, 160);
+  font-weight: light;
+  font-size: small;
+}
+
+.hide {
+  display: none;
+}
+
+#arrow {
+  display: none;
+}
+
+#arrow:checked ~ #quote1 {
+  display: block;
+}
+
+#arrow:not(:checked) ~ #quote2 {
+  display: block;
+}
+
+.arrowClick {
+  width: 200px;
+  float: inline-end;
+}
+
+.articleFormat {
+  display: grid;
+  padding-right: 20px;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  overflow-wrap: break-word;
+}
+.articleFormat h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#article1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+#article1 #inlineImage1 {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#article2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+#article2 #inlineImage2 {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.byline-date {
+  margin-top: 30px;
+}
+
+.articleText {
+  margin-bottom: 5px;
+}
+
+#contactForm {
+  font-size: large;
+  font-family: "Barlow", sans-serif;
+  background-color: rgb(0, 3, 22);
+  color: rgb(247, 249, 250);
+  border: 2px solid rgb(0, 96, 250);
+  padding: 20px;
+  width: 96%;
+}
+#contactForm hr {
+  border-color: rgb(0, 96, 250);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#subscribeForm {
+  font-size: large;
+  font-family: "Barlow", sans-serif;
+  background-color: rgb(0, 3, 22);
+  color: rgb(247, 249, 250);
+  border: 2px solid rgb(0, 96, 250);
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.likeItem {
+  float: inline-end;
+  position: relative;
+}
+
+#calendarChk,
+#article1Chk,
+#article2Chk {
+  position: absolute;
+}
+
+.like,
+.unlike {
+  width: 40px;
+  cursor: pointer;
+}
+
+.like {
+  display: none;
+}
+
+.unlike {
+  display: inline;
+}
+
+#calendarChk:checked + label .like,
+#article1Chk:checked + label .like,
+#article2Chk:checked + label .like {
+  display: inline;
+}
+
+#calendarChk:checked + label .unlike,
+#article1Chk:checked + label .unlike,
+#article2Chk:checked + label .unlike {
+  display: none;
+}
+
+/* alternative:
+.likeItem input[type="checkbox"]:checked+label .like {
+    display: inline;
+}
+
+.likeItem input[type="checkbox"]:checked+label .unlike {
+    display: none;
+}
+*/
+.bookmarkedImage,
+.bookmarkImage {
+  width: 40px;
+  float: inline-end;
+  cursor: pointer;
+}
+
+.bookmarkedImage {
+  display: none;
+}
+
+.dropdown-menu {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: medium;
+  text-align: center;
+  float: inline-end;
+}
+
+.menuBtn {
+  background-color: rgb(0, 96, 250);
+  color: rgb(247, 249, 250);
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 140px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.dropdown-options {
+  position: absolute;
+  background-color: rgb(247, 249, 250);
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown-options ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.dropdown-options li {
+  padding: 10px;
+  width: 120px;
+}
+
+.dropdown-options li:hover {
+  background-color: rgb(255, 250, 160);
+}
+
+.dropdown-options li a {
+  text-decoration: none;
+  color: rgb(0, 96, 250);
+  font-family: "Barlow", sans-serif;
+  font-weight: light;
+}
+
+#comments {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+}
+
+.savedArticles {
+  background-color: rgb(43, 42, 49);
+  color: rgb(247, 249, 250);
+  border: 2px solid rgb(0, 96, 250);
+  padding: 25px;
+}
+.savedArticles .bookmarkedImage,
+.savedArticles .bookmarkImage,
+.savedArticles .like,
+.savedArticles .unlike {
+  display: none;
+}
+.savedArticles img {
+  width: 100%;
+  border: 1px solid rgb(0, 96, 250);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,417 @@
+<!-- added on to and modified my code from Task 15 (HTML and CSS Webpage) -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <Home | Seen & Heard>
+    </title>
+
+    <!-- link to index.scss file -->
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <!-- referenced https://www.cdnfonts.com/barlow.font
+        website referenced for link to content font file -->
+    <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+
+    <!-- referenced https://www.cdnfonts.com/hussar-4.font
+        website referenced for link to main font file -->
+    <link href="https://fonts.cdnfonts.com/css/hussar-4" rel="stylesheet">
+
+    <!-- link JQUERY to html file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- styling caters for display of form in Google Chrome
+        the form may appear differently in other browsers (such as Safari) -->
+    <div class="wrapper">
+        <header id="fixedHeader">
+            <!-- image 1 -->
+            <!-- logo -->
+            <img id="logoAnimate" src="images/logo.png" alt="Seen & Heard logo" width="110" />
+            <!-- index -->
+            <nav id="index">
+                <b>
+                    <!-- redirect to the other webpages -->
+                    <h4>&emsp; <a href="about-us.html">ABOUT US</a>
+                        &emsp;&emsp;&emsp; <a href="index.html">HOME</a>
+                        &emsp;&emsp;&emsp; <a href="contact-us.html">CONTACT US</a>
+                    </h4>
+                </b>
+            </nav>
+        </header>
+
+        <main>
+            <div class="lightMode">
+
+                <!-- dropdown menu -->
+                <header class="dropdown-menu" style="float: inline-start;">
+                    <button class="menuBtn">Menu</button>
+                    <nav class="dropdown-options">
+                        <!-- unordered list of menu options -->
+                        <ul>
+                            <!-- link to menu option webpages -->
+                            <li><a href="save-for-later.html">Earmarked Items</a></li>
+                            <li><a href="help.html">You can help!</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <br>
+                <!-- search form -->
+                <header style="float: inline-end;">
+                    <!-- GET form -->
+                    <form id="searchForm" action="/index.html" method="GET">
+                        <input type="search" id="profileSearch" name="q">
+                        <input type="submit" value="Search">
+                    </form>
+                    <br>
+                </header>
+
+                <!-- image 2 -->
+                <!-- calendar image -->
+                <aside>
+                    <img src="images/calendar.PNG" alt="January Calendar - Human Trafficking Prevention Month"
+                        id="calendar" width="100%" />
+
+                    <form class="likeItem">
+                        <!-- hidden checkbox -->
+                        <input type="checkbox" id="calendarChk" style="display: none;">
+                        <!-- labels  with images (within form tags)-->
+                        <!-- change image displayed when it is clicked (checked) -->
+                        <label for="calendarChk">
+                            <img src="images/unlike.png" alt="Unlike image" class="unlike" />
+                            <img src="images/like.png" alt="Like image" class="like" />
+                        </label>
+                    </form>
+                    <div class="saveItemForLater">
+                        <!-- change image displayed when it is clicked (checked) -->
+                        <img src="images/bookmark.png" alt="Bookmark image" class="bookmarkImage"
+                            onclick="saveImageForLater('calendar', 'images/calendar.PNG')" />
+                        <img src="images/bookmarked.png" alt="Bookmarked image" class="bookmarkedImage"
+                            onclick="removeImageFromSaveForLater('calendar')" />
+                    </div>
+                </aside>
+            </div>
+
+            <!-- format div to avoid content overlap -->
+            <div class="textFlowContainer">
+                <!-- call function from "align-format" -->
+                <article class="lightMode">
+                    <section class="underlineYellow">
+                        <h2>
+                            Bridge the Gap
+                        </h2>
+                    </section>
+
+                    <article class="articleFormat">
+                        <div id="article1">
+                            <!-- article 1 -->
+                            <!-- image 5 -->
+                            <img id="inlineImage1" src="images/image1.png" alt="Survivor Made Collection image" />
+                            <div class="articleContent">
+                                <h3 class="underlineRed">
+                                    <b>
+                                        Threads of Triumph
+                                    </b>
+                                </h3>
+                                <aside>
+                                    <form class="likeItem">
+                                        <!-- hidden checkbox -->
+                                        <input type="checkbox" id="article1Chk" style="display: none;">
+                                        <!-- labels  with images (within form tags)-->
+                                        <!-- change image displayed when it is clicked (checked) -->
+                                        <label for="article1Chk">
+                                            <img src="images/unlike.png" alt="Unlike image" class="unlike" />
+                                            <img src="images/like.png" alt="Like image" class="like" />
+                                        </label>
+                                    </form>
+                                    <!-- save article for later -->
+                                    <div class="saveItemForLater">
+                                        <!-- change image displayed when it is clicked (checked) -->
+                                        <img src="images/bookmark.png" alt="Bookmark image" class="bookmarkImage"
+                                            onclick="saveArticleForLater('article1')" />
+                                        <img src="images/bookmarked.png" alt="Bookmarked image" class="bookmarkedImage"
+                                            onclick="removeArticleFromSaveForLater('article1')" />
+                                    </div>
+                                </aside>
+                                <br>
+                                <p class="byline-date">
+                                    BY <a href="https://store.ourrescue.org/collections/survivor-made">
+                                        OPERATION UNDERGROUND RAILROAD</a> / 2024
+                                </p>
+                                <p class="articleText">
+                                    "Each item in this collection was made by women protected from human trafficking.
+                                    Your
+                                    purchase
+                                    directly impacts them and supports O.U.R.'s mission."
+                                </p>
+                                <h6>
+                                    <a class="seeMore" href="https://store.ourrescue.org/collections/survivor-made">
+                                        View the SURVIVOR MADE Collection</a>
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div id="article2">
+                            <!-- article 2 -->
+                            <!-- image 6 -->
+                            <img id="inlineImage2" src="images/image2.png" alt="AnnieCannons image" />
+                            <div class="articleContent">
+                                <h3 class="underlineRed">
+                                    <b>
+                                        Code for Change
+                                    </b>
+                                </h3>
+                                <aside>
+                                    <form class="likeItem">
+                                        <!-- hidden checkbox -->
+                                        <input type="checkbox" id="article2Chk" style="display: none;">
+                                        <!-- labels  with images (within form tags)-->
+                                        <!-- change image displayed when it is clicked (checked) -->
+                                        <label for="article2Chk">
+                                            <img src="images/unlike.png" alt="Unlike image" class="unlike" />
+                                            <img src="images/like.png" alt="Like image" class="like" />
+                                        </label>
+                                    </form>
+                                    <!-- save article for later -->
+                                    <div class="saveItemForLater">
+                                        <!-- change image displayed when it is clicked (checked) -->
+                                        <img src="images/bookmark.png" alt="Bookmark image" class="bookmarkImage"
+                                            onclick="saveArticleForLater('article2')" />
+                                        <img src="images/bookmarked.png" alt="Bookmarked image" class="bookmarkedImage"
+                                            onclick="removeArticleFromSaveForLater('article2')" />
+                                    </div>
+                                </aside>
+                                <br>
+                                <p class="byline-date">
+                                    BY <a href="https://anniecannons.org">
+                                        CEO AND COFOUNDER OF ANNIECANNONS: LAURA HACKNEY</a> / 2024
+                                </p>
+
+                                <p class="articleText">
+                                    "In the next several years, AnnieCannons will continue to reach more survivors,
+                                    train
+                                    more
+                                    world-class software engineers, develop more interesting and purposeful products,
+                                    and
+                                    re-shape
+                                    the way we all view the workplace and the world. We have always been reaching for
+                                    the
+                                    stars,
+                                    and
+                                    we are just getting started."
+                                </p>
+                                <h6>
+                                    <a class="seeMore" href="https://anniecannons.org">
+                                        View the AnnieCannons website</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+
+                <!-- quote-->
+                <article id="quotations" class="darkMode">
+                    <br><br>
+                    <!-- image 3 -->
+                    <!-- quote image -->
+                    <img class="quoteHeader" src="images/header.PNG" alt="Anti-Trafficking Blue Ribbon Image"
+                        height="200px" />
+
+                    <!-- change text displayed when arrow is clicked (checked) -->
+                    <input type="checkbox" id="arrow">
+                    <label for="arrow">
+                        <!-- image 4 -->
+                        <img class="arrowClick" src="images/arrow.PNG" alt="Arrow icon">
+                    </label>
+                    <br><br>
+
+                    <figure id="quote1" class="hide">
+                        <blockquote class="blockquote">
+                            <p>
+                                “I definitely think back to this and wonder what would have helped me in that situation
+                                and
+                                I think knowledge would have been the number one thing. I didn't know what sex
+                                trafficking
+                                was.”
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <p>
+                                <cite title="Source Title">- Jennifer Lyons, Survivor</cite>
+                            </p>
+                        </figcaption>
+                        <h6>
+                            <b>
+                                UNDERGO HUMAN-TRAFFICKING TRAINING BASICS
+                                <!-- external link 1 -->
+                                <a href="https://polarisproject.org/training/">HERE</a>
+                            </b>
+                        </h6>
+                    </figure>
+
+                    <figure id="quote2" class="hide">
+                        <blockquote class="blockquote">
+                            <p>
+                                “Survivor care recognizes and addresses the vulnerabilities of survivors and prioritizes
+                                restoring the survivors' feelings of safety, choice, and control through a variety of
+                                ways
+                                like emergency shelter, case management, counseling, legal services, financial
+                                assistance,
+                                and individualized support. As the importance of survivor care is understood, many
+                                realize
+                                that it isn't an option, it's a necessity.”
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <p>
+                                Source from <cite title="Source Title">The Tim Tebow Foundation</cite>
+                            </p>
+                        </figcaption>
+                        <h6>
+                            <b>
+                                LEARN MORE ABOUT SURVIVOR CARE
+                                <!-- external link 2 -->
+                                <a href="https://timtebowfoundation.org/stories/joy-being-found">HERE</a>
+                            </b>
+                        </h6>
+                    </figure>
+                    <br>
+                </article>
+            </div>
+        </main>
+
+        <div class="lightMode">
+            <!-- return to top of webpage -->
+            <nav>
+                <br>
+                <p style="text-transform: uppercase; letter-spacing: 0; font-weight: bold;">
+                    <a href="#searchForm">Back to the top</a>
+                </p>
+            </nav>
+
+            <!-- give inspiration credit to 
+            <h6>
+                Referenced the <a href="https://techagainsttrafficking.org/">Tech Against Trafficking</a> website for
+                guidance on the content and styling of this webpage.
+            </h6>
+            -->
+        </div>
+        <!-- bottom of webpage -->
+        <footer>
+            <br>
+            <div id="closing">
+                <!-- logo -->
+                <img class="logo" src="images/logo.png" alt="Seen & Heard logo" width="175" />
+                <h2 id="contactPrompt">
+                    <a href="contact-us.html">CONTACT US</a>
+                </h2>
+                <address id="copy">
+                    <h5>
+                        Made by <i>Jediah Jireh Naicker</i>
+                        <br>
+                        &copy; 2024
+                    </h5>
+                </address>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript code functionality for liking and unliking items -->
+    <script>
+        /* referenced code guidance for saving correct like/unlike image in local storage by mentor Troy Tempest :
+        set id of images in likeItem form class (use template literals and increment counter for id) */
+        $(document).ready(function () {
+            //initialise counter for assigning ids to like/unlike image sets
+            let iCountLikeID = 1;
+
+            //go through each image set
+            $('.likeItem').each(function () {
+                //created ids for like/unlike image sets
+                let setID = `likeSet${iCountLikeID}`;
+
+                //assign generated id to current like/unlike image set
+                $(this).attr('id', setID);
+
+                //retrieve data from local storage
+                let lastClickedImage = localStorage.getItem(setID);
+
+                //check if last clicked image is the like image
+                if (lastClickedImage === 'like') {
+                    //hide unlike image
+                    $(this).find('.unlike').hide();
+                    //display like image
+                    $(this).find('.like').show();
+                }
+                //check if last clicked image is the unlike image
+                else {
+                    //hide like image
+                    $(this).find('.like').hide();
+                    //display unlike image 
+                    $(this).find('.unlike').show();
+                }
+                //increment counter for next like/unlike image set
+                iCountLikeID++;
+            });
+
+            //set default visible image for each image set to unlike image (if neither image in set is clicked)
+            //go through each item in class
+            $('.likeItem').each(function () {
+                //get id of current element
+                let setID = $(this).attr('id');
+                //if the image set id is not stored in local storage
+                if (!localStorage.getItem(setID)) {
+                    //hide like image
+                    $(this).find('.like').hide();
+                    //display unlike image
+                    $(this).find('.unlike').show();
+                    //save default visible image as unlike image in local storage
+                    localStorage.setItem(setID, 'unlike');
+                }
+            });
+
+            //synchronise checkbox state with visibility of like/unlike images
+            //go through each checkbox in likeItem class
+            $('.likeItem input[type="checkbox"]').each(function () {
+                //get correct id from class
+                let setID = $(this).closest('.likeItem').attr('id');
+                //check if image set id is stored in local storage (boolean)
+                let isChecked = localStorage.getItem(setID) === 'like';
+
+                //referenced https://www.w3schools.com/jquery/html_prop.asp for guidance on the jQuery .prop() method
+                //set checked property (checkbox state) to checked if like image visible
+                $(this).prop('checked', isChecked);
+                //show like image if checked
+                $(`#${setID} .like`).toggle(isChecked);
+                //show unlike image if unchecked
+                $(`#${setID} .unlike`).toggle(!isChecked);
+            });
+
+            //select all checkboxes in likeItem class
+            //function to be executed upon checkbox state change (when checked or unchecked)
+            $('.likeItem input[type="checkbox"]').change(function () {
+                //get correct id from class
+                let setID = $(this).closest('.likeItem').attr('id');
+                //check if particular checkbox is checked
+                let isChecked = $(this).is(':checked');
+
+                //update local storage with the id and corresponding like value (if checkbox is checked) or unlike value (if checkbox is unchecked)
+                localStorage.setItem(setID, isChecked ? 'like' : 'unlike');
+                //show like image if checked
+                $(`#${setID} .like`).toggle(isChecked);
+                //show unlike image if unchecked
+                $(`#${setID} .unlike`).toggle(!isChecked);
+            });
+        });
+    </script>
+
+    <!-- link to JS file -->
+    <script type="text/javascript" src="functionality.js"></script>
+    <!-- link to save-for-later js file -->
+    <script type="text/javascript" src="save-for-later.js"></script>
+</body>
+
+</html>

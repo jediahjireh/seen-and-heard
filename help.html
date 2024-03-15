@@ -1,0 +1,458 @@
+<!-- added on to my code from Task 15 (HTML and CSS Webpage) -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <How To Help | Seen & Heard>
+    </title>
+
+    <!-- link to index.scss file -->
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <!-- referenced https://www.cdnfonts.com/barlow.font
+        website referenced for link to content font file -->
+    <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+
+    <!-- referenced https://www.cdnfonts.com/hussar-4.font
+        website referenced for link to main font file -->
+    <link href="https://fonts.cdnfonts.com/css/hussar-4" rel="stylesheet">
+
+    <!-- link JQUERY to html file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- styling caters for display of form in Google Chrome
+        the form may appear differently in other browsers (such as Safari) -->
+    <div class="wrapper">
+        <header id="fixedHeader">
+            <!-- image 1 -->
+            <!-- logo -->
+            <img id="logoAnimate" src="images/logo.png" alt="Seen & Heard logo" width="110" />
+            <!-- index -->
+            <nav id="index">
+                <b>
+                    <!-- redirect to the other webpages -->
+                    <h4>&emsp; <a href="about-us.html">ABOUT US</a>
+                        &emsp;&emsp;&emsp; <a href="index.html">HOME</a>
+                        &emsp;&emsp;&emsp; <a href="contact-us.html">CONTACT US</a>
+                    </h4>
+                </b>
+            </nav>
+        </header>
+
+        <main class="lightMode">
+            <!-- dropdown menu -->
+            <header class="dropdown-menu">
+                <button class="menuBtn">Menu</button>
+                <nav class="dropdown-options">
+                    <!-- unordered list of menu options -->
+                    <ul>
+                        <!-- link to menu option webpages -->
+                        <li><a href="save-for-later.html">Earmarked Items</a></li>
+                        <li><a href="help.html">You can help!</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- how you can help table -->
+            <div id="sectorInitiativeTable">
+                <br><br>
+                <h2 class="underlineYellow">
+                    HOW YOU CAN HELP:
+                </h2>
+                <!-- referenced https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
+    website referenced for guidance on the structure and syntax associated with tables in html and css -->
+                <!-- table -->
+                <table>
+                    <caption>
+                        <p style="font-weight: lighter;">
+                            <i>
+                                The table above defines ways in which different sectors can contribute towards
+                                anti-trafficking.
+                            </i>
+                        </p>
+                    </caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <!-- table headings (3 columns) -->
+                            <td>
+                                <p>
+                                    <b>
+                                        SECTOR
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>
+                                        INITIATIVES
+                                </p>
+                                </b>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>
+                                        ELABORATION
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a href="https://www.a21.org/content/business/grvxcg">Business</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Employment opportunities</p>
+                            </td>
+                            <td>
+                                <p>Offer skill training to survivors of trafficking</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <p>Corporate Responsibility</p>
+                            </td>
+                            <td>
+                                <p>Implement policies and practices that prioritise human rights and dignity</p>
+
+                                <p>Train employees to recognise and report suspicious activities</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Support anti-trafficking organisations</p>
+                            </td>
+                            <td>
+                                <p>Host corporate social responsibility events</p>
+
+                                <p>Invest in our mission (with finances, resources or time)</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a href="https://safehouseproject.org/healthcare">Healthcare</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Training </p>
+                            </td>
+                            <td>
+                                <p>Train service providers to recognise the signs of trafficking and respond
+                                    appropriately</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Provide tailored care</p>
+                            </td>
+                            <td>
+                                <p>Advocate for healthcare policies that prioritise the needs of trafficking
+                                    survivors</p>
+
+                                <p>Accommodate for holistic support services to be trauma-informed</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a href="https://techagainsttrafficking.org/whos-involved/">Information
+                                        Technology</a>
+
+                                </p>
+                            </td>
+                            <td>
+                                <p>Raise awareness</p>
+                            </td>
+                            <td>
+                                <p>Amplify the stories of survivors through digital platforms, harnessing tech for
+                                    good.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Provide support</p>
+                            </td>
+                            <td>
+                                <p>Offer technical support to anti-trafficking organisations.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Code for change</p>
+                            </td>
+                            <td>
+                                <p>Develop technological solutions to leverage the power of technology, in order to
+                                    rescue survivors and dismantle criminal networks</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Cyber vigilance</p>
+                            </td>
+                            <td>
+                                <p>Be on the lookout for online exploitation schemes</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a href="https://www.a21.org/content/education/grc2u8">Education</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Prevention</p>
+                            </td>
+                            <td>
+                                <p>Emphasise the importance of healthy relationships with boundaries and clarify
+                                    what they look like</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Training</p>
+                            </td>
+                            <td>
+                                <p>Educate school staff on the identification of and response techniques to
+                                    potential trafficking situations</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Syllabus Integration</p>
+                            </td>
+                            <td>
+                                <p>Teach students about the dangers of exploitation and how to identify warning
+                                    signs by integrating anti-trafficking educational modules</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a
+                                        href="https://mark43.com/resources/blog/tools-technology-for-human-trafficking-investigations-qa-with-former-law-enforcement/">Legal</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Representation</p>
+                            </td>
+                            <td>
+                                <p>Provide legal assistance to trafficking survivors</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Advocacy</p>
+                            </td>
+                            <td>
+                                <p>Stand for stronger anti-trafficking laws and policies at all levels to enhance
+                                    victim protections and hold traffickers accountable</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Training</p>
+                            </td>
+                            <td>
+                                <p>Undergo further training on human-trafficking identification signs and laws, as
+                                    well as trauma-informed legal assistance</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Investigation </p>
+                            </td>
+                            <td>
+                                <p>Collaborate with stakeholders to dismantle trafficking networks and rescue
+                                    survivors</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Community engagement</p>
+                            </td>
+                            <td>
+                                <p>Build trust with vulnerable populations to encourage the reporting of suspicious
+                                    activity</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a
+                                        href="https://polarisproject.org/human-trafficking-and-the-transportation-industry/#:~:text=Transportation%20for%20Victims%20%26%20Survivors,-×&text=Bus%20and%20truck%20drivers%20have,sex%20trafficking%20at%20truck%20stops.">Transportation</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Training</p>
+                            </td>
+                            <td>
+                                <p>Train workers to recognise and report signs of trafficking among potential cases
+                                    they come across</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Collaborate with law enforcement</p>
+                            </td>
+                            <td>
+                                <p>Share information and coordinate efforts to identify and intercept trafficking
+                                    activities in transit hubs and transportation routes.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Support provision</p>
+                            </td>
+                            <td>
+                                <p>Provide transportation services to survivors to help them move to safe locations
+                                    or access support services</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="sector">
+                                    <a
+                                        href="https://humantraffickinghotline.org/sites/default/files/Human%20Trafficking%20and%20the%20Hotel%20Industry.pdf">Hospitality</a>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Training</p>
+                            </td>
+                            <td>
+                                <p>Train staff to recognise potential indicators of trafficking (such as guests with
+                                    no luggage or unusual requests)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Awareness</p>
+                            </td>
+                            <td>
+                                <p>Alert travellers about the risks of trafficking in common areas, as well as how
+                                    to contact local authorities should they witness suspicious activity or require
+                                    aid</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Reporting systems</p>
+                            </td>
+                            <td>
+                                <p>Establish protocols for reporting and responding to potential trafficking cases
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <article id="commentSection">
+                <hr>
+                <h2 class="underlineYellow">
+                    FEEDBACK FORM
+                </h2>
+                <!-- comment form -->
+                <form id="commentForm" action="/help.html" method="POST" style="font-size: 18px;">
+                    <label for="name">NAME:</label><br>
+                    <input type="text" id="name" required>
+                    <br><br>
+                    <label for="email">EMAIL:</label><br>
+                    <input type="email" id="email" required>
+                    <br><br>
+                    <label for="comment">YOUR COMMENT:</label><br>
+                    <textarea id="comment" rows="4" cols="35" style="font-family: 'Gill Sans', sans-serif;"
+                        required></textarea>
+                    <br><br>
+                    <button type="button" style="width: 390px; height: 50px;" id="submitCommentBtn"
+                        onclick="submitComment()">
+                        <b>
+                            SUBMIT
+                        </b>
+                    </button>
+                    <br><br>
+                </form>
+
+                <!-- format comments using <hr> -->
+                <hr>
+                <h3 class="underlineRed">
+                    Comments
+                </h3>
+                <hr>
+                <div id="comments">
+                    <!-- display comments in comments box -->
+                </div>
+            </article>
+        </main>
+
+        <!-- return to top of webpage -->
+        <nav class="lightMode">
+            <br>
+            <p style="text-transform: uppercase; letter-spacing: 0; font-weight: bold;">
+                <a href="#sectorInitiativeTable">Back to the top</a>
+            </p>
+        </nav>
+
+        <!-- bottom of webpage -->
+        <footer>
+            <br>
+            <div id="closing">
+                <!-- logo -->
+                <img class="logo" src="images/logo.png" alt="Seen & Heard logo" width="175" />
+                <h2 id="contactPrompt">
+                    <a href="contact-us.html">CONTACT US</a>
+                </h2>
+                <address id="copy">
+                    <h5>
+                        Made by <i>Jediah Jireh Naicker</i>
+                        <br>
+                        &copy; 2024
+                    </h5>
+                </address>
+            </div>
+        </footer>
+    </div>
+
+    <!-- link to JS file for logo animation and dropdown menu -->
+    <script type="text/javascript" src="functionality.js"></script>
+    <!-- link to comments JS file -->
+    <script type="text/javascript" src="comments.js"></script>
+</body>
+
+</html>

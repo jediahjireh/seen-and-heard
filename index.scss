@@ -1,0 +1,550 @@
+/* NOTE :
+referenced my code from "copy-cat.html", "copy-cat.scss" and "_align-format.scss" in my "Task 14 (Cloned Webpage)" folder
+added on to and modified my code from Task 15 (HTML and CSS Webpage)
+images not accompanied with a link were designed by me (Jediah Jireh Naicker) using Canva
+referenced https://developers.google.com/fonts/docs/getting_started
+website referenced for guidance and information regarding font styles and formatting
+*/
+
+//import module/partial to main file to access its functions and elements
+@import "align-format";
+
+//import content font file
+@import url('https://fonts.cdnfonts.com/css/barlow');
+
+//import main font file
+@import url('https://fonts.cdnfonts.com/css/hussar-4');
+
+//variables for fonts used
+$main-font: 'Hussar', sans-serif;
+$content-font: 'Barlow', sans-serif;
+
+//variables for colour scheme palette
+$light-blue: rgb(0, 96, 250);
+$red: rgb(132, 4, 4);
+$yellow: rgb(255, 250, 160);
+$black: rgb(0, 3, 22);
+$white: rgb(247, 249, 250);
+$dark-blue: rgb(19, 4, 219);
+$medium-grey: rgb(59, 65, 79);
+$dark-grey: rgb(43, 42, 49);
+
+//variable for font size
+$default-font-size: 16px;
+
+//all webpages :
+//header customisation
+#fixedHeader {
+    background-color: $light-blue;
+    //keep header fixed
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    //keep header above other content
+    z-index: 1000;
+    //format header
+    @extend formatContent;
+
+    //logo placement on header
+    img {
+        float: inline-start;
+    }
+}
+
+//format index
+#index a {
+    //remove common link colour
+    color: $white;
+    font-family: $main-font;
+    cursor: pointer;
+    //centralise
+    text-align: center;
+    //remove underline
+    text-decoration: none;
+}
+
+//webpage customisation
+body {
+    //defaults
+    margin: 20px;
+    padding: 20px;
+    background-color: $white;
+    //do not leave edges as open borders
+    box-sizing: border-box;
+    display: block;
+}
+
+//referenced "Task 13 - CSS Overview" code review by code reviewer Johann Jansen van Vuuren
+.wrapper {
+    //max-width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+//use mixin for themes
+@mixin themes($background-colour, $colour) {
+    background-color: $background-colour;
+    color: $colour;
+    font-family: $main-font;
+    width: 100%;
+    //border: 20px solid $background-colour;
+}
+
+//dark theme
+.darkMode {
+    @include themes($black, $white);
+}
+
+//format webpage according to light mode standards
+.lightMode {
+    @include themes($white, $black);
+}
+
+//format link appearance
+a {
+    cursor: pointer;
+    color: $light-blue;
+}
+
+//format paragraph appearance
+p {
+    font-family: $content-font;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+//format heading style appearance
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    //font-variant: small-caps;
+    font-family: $main-font;
+    text-transform: uppercase;
+}
+
+//font sizing:
+//font size 1
+h1 {
+    font-size: $default-font-size + 32px;
+}
+
+//font size 2
+h2 {
+    font-size: $default-font-size + 16px;
+}
+
+//font size 3
+h3 {
+    font-size: $default-font-size + 8px;
+}
+
+h4 {
+    font-size: $default-font-size;
+}
+
+//footer customisation
+footer {
+    background-color: $light-blue;
+    width: 100%;
+}
+
+//centralise items
+#closing {
+    @extend formatContent;
+    justify-content: space-between;
+    width: 99%;
+
+    //logo
+    img {
+        margin-right: auto;
+    }
+}
+
+//customise copy
+#copy {
+    font-weight: 500;
+    margin-left: auto;
+}
+
+//customise central text
+#contactPrompt a {
+    //centralise text
+    text-align: center;
+    //remove general link customised appearance
+    text-decoration: none;
+    color: $white;
+}
+
+//remove automatic style from address
+address {
+    font-style: normal;
+}
+
+//content must only start after header
+main {
+    padding-top: 10%;
+}
+
+//customise text underline
+@mixin customiseUnderline($colour, $thickness, $offset) {
+    text-decoration: underline;
+    //text-decoration: line-through; - line stays in front of text and does not go behind it like intended
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    //arguments
+    text-decoration-color: $colour;
+    text-decoration-thickness: $thickness;
+    text-underline-offset: $offset;
+}
+
+.underlineYellow {
+    @include customiseUnderline($yellow, 20px, -93%);
+}
+
+.underlineRed {
+    //transparent $red
+    @include customiseUnderline(rgb(132, 4, 4, 0.2), 10px, -85%);
+}
+
+.underlineBlue {
+    @include customiseUnderline($light-blue, 20px, -82%);
+}
+
+//index.html:
+//sector table
+.sector a {
+    color: $red;
+    background-color: $yellow;
+    background-size: contain;
+    //remove link appearance properties
+    text-decoration: none;
+}
+
+//table layout
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+//border lines
+th,
+td {
+    border: 1px solid $black;
+    padding: 10px;
+    text-align: left;
+}
+
+//caption must be under table
+caption {
+    caption-side: bottom;
+}
+
+//quotations
+//position image as header
+.quoteHeader {
+    width: 100%;
+}
+
+//format quotes
+#quotations {
+    text-align: center;
+    width: 100%;
+}
+
+//customise source reference font
+.blockquote-footer {
+    color: $yellow;
+    font-weight: light;
+    font-size: small;
+}
+
+//display one quote at a time
+.hide {
+    display: none;
+}
+
+//hide checkbox
+#arrow {
+    display: none;
+}
+
+//show quote1 when checkbox is checked
+#arrow:checked~#quote1 {
+    display: block;
+}
+
+//show quote2 when checkbox is unchecked
+#arrow:not(:checked)~#quote2 {
+    display: block;
+}
+
+//position arrow image
+.arrowClick {
+    width: 200px;
+    float: inline-end;
+}
+
+//grid container
+.articleFormat {
+    display: grid;
+    padding-right: 20px;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    overflow-wrap: break-word;
+
+    //like and bookmark elements under article headings so reduce unnecessary space
+    h3 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+//article column 1
+#article1 {
+    grid-row: 1;
+    grid-column: 1;
+
+    //article image
+    #inlineImage1 {
+        width: 100%;
+        //ensure both images are of equal aspect ratio
+        height: 400px;
+        //stretch image to cover container
+        object-fit: cover;
+    }
+}
+
+//article column 2
+#article2 {
+    grid-row: 1;
+    grid-column: 2;
+
+    //article image
+    #inlineImage2 {
+        //text stops overlapping when this line is included:
+        width: 100%;
+        //ensure both images are of equal aspect ratio
+        height: 400px;
+        //stretch image to cover container
+        object-fit: cover;
+    }
+}
+
+//distribute space appropriately
+.byline-date {
+    margin-top: 30px;
+}
+
+//ensure "see more" is not too far apart
+.articleText {
+    margin-bottom: 5px;
+}
+
+//contact-us.html and about-us.html webpage :
+
+//format forms with background
+@mixin formatForm($width) {
+    //form appearance
+    font-size: large;
+    font-family: $content-font;
+    background-color: $black;
+    color: $white;
+    //layout
+    border: 2px solid $light-blue;
+    padding: 20px;
+    @extend formatContent;
+    //argument
+    width: $width;
+}
+
+//radio-group form
+#contactForm {
+    @include formatForm(96%);
+
+    //nesting
+    hr {
+        border-color: $light-blue;
+    }
+}
+
+//format radio-group layout
+.radio-group {
+    //align options to margin
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+//submit form
+#subscribeForm {
+    @include formatForm(50%);
+    //centre button
+    text-align: center;
+    //centre form
+    margin: 0 auto;
+}
+
+//like items
+.likeItem {
+    float: inline-end;
+    position: relative;
+}
+
+//position checkbox directly over 'like button'
+#calendarChk,
+#article1Chk,
+#article2Chk {
+    position: absolute;
+}
+
+//format images
+.like,
+.unlike {
+    width: 40px;
+    cursor: pointer;
+}
+
+//hide like image by default
+.like {
+    display: none;
+}
+
+//show unlike image be default
+.unlike {
+    display: inline;
+}
+
+//show like image when unlike image is clicked (checkbox is checked)
+#calendarChk:checked+label .like,
+#article1Chk:checked+label .like,
+#article2Chk:checked+label .like {
+    display: inline;
+}
+
+//hide unlike image when checkbox is checked
+#calendarChk:checked+label .unlike,
+#article1Chk:checked+label .unlike,
+#article2Chk:checked+label .unlike {
+    display: none;
+}
+
+/* alternative:
+.likeItem input[type="checkbox"]:checked+label .like {
+    display: inline;
+}
+
+.likeItem input[type="checkbox"]:checked+label .unlike {
+    display: none;
+}
+*/
+
+//SAVE FOR LATER
+//format images
+.bookmarkedImage,
+.bookmarkImage {
+    width: 40px;
+    float: inline-end;
+    cursor: pointer;
+}
+
+//hide bookmarked image by default
+.bookmarkedImage {
+    display: none;
+}
+
+//jQuery functionality related elements :
+//dropdown menu format specifications
+.dropdown-menu {
+    position: relative;
+    //display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: medium;
+    text-align: center;
+    // padding: 10px;
+    float: inline-end;
+}
+
+//dropdown menu button
+.menuBtn {
+    background-color: $light-blue;
+    color: $white;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 140px;
+}
+
+//change cursor to point when hovering over any button
+button:hover {
+    cursor: pointer;
+}
+
+//menu options
+.dropdown-options {
+    position: absolute;
+    background-color: $white;
+    overflow: hidden;
+    //do not display options upon loading
+    display: none;
+}
+
+//unordered list
+.dropdown-options ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+//menu list options
+.dropdown-options li {
+    padding: 10px;
+    width: 120px;
+}
+
+//change upon hover over menu options
+.dropdown-options li:hover {
+    background-color: $yellow;
+}
+
+//remove link formatting
+.dropdown-options li a {
+    text-decoration: none;
+    color: $light-blue;
+    font-family: $content-font;
+    font-weight: light;
+}
+
+//comments box
+#comments {
+    font-family: $content-font;
+    font-size: $default-font-size;
+}
+
+//style saved articles for display on save-for-later.html webpage
+.savedArticles {
+    background-color: $dark-grey;
+    color: $white;
+    //outline articles
+    border: 2px solid $light-blue;
+    padding: 25px;
+
+    //hide interactive images
+    .bookmarkedImage,
+    .bookmarkImage,
+    .like,
+    .unlike {
+        display: none;
+    }
+
+    //size article images
+    img {
+        //images
+        width: 100%;
+        border: 1px solid $light-blue;
+    }
+}

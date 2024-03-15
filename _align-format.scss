@@ -1,0 +1,11 @@
+//file linked to "index.scss"
+//modules and partials
+
+//distribute space accurately along main axis of flex container
+formatContent {
+    //align elements flexibly and distribute space within element (https://www.freecodecamp.org/news/the-css-flexbox-handbook/#:~:text=It%27s%20a%20CSS%20layout%20model,Flexbox%20layout%20model%20is%20bidirectional.)
+    display: flex;
+    align-items: center;
+    //property defines how the browser distributes space (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+    justify-content: center;
+}

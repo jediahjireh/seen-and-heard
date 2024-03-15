@@ -1,0 +1,135 @@
+<!-- added on to my code from Task 15 (HTML and CSS Webpage) -->
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <Contact Us | Seen & Heard>
+    </title>
+
+    <!-- link to index.scss file -->
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <!-- referenced https://www.cdnfonts.com/barlow.font
+        website referenced for link to content font file -->
+    <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+
+    <!-- referenced https://www.cdnfonts.com/hussar-4.font
+            website referenced for link to main font file -->
+    <link href="https://fonts.cdnfonts.com/css/hussar-4" rel="stylesheet">
+
+    <!-- link JQUERY to html file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--styling caters for display of form in Google Chrome 
+            the form may appear differently in other browsers (such as Safari) -->
+        <header id="fixedHeader">
+            <!-- image 1 -->
+            <!-- logo -->
+            <img id="logoAnimate" src="images/logo.png" alt="Seen & Heard logo" width="110" />
+            <!-- index -->
+            <nav id="index">
+                <b>
+                    <!-- redirect to the other webpages -->
+                    <h4>&emsp; <a href="about-us.html">ABOUT US</a>
+                        &emsp;&emsp;&emsp; <a href="index.html">HOME</a>
+                        &emsp;&emsp;&emsp; <a href="contact-us.html">CONTACT US</a>
+                    </h4>
+                </b>
+            </nav>
+        </header>
+
+        <main class="lightMode">
+            <!-- dropdown menu -->
+            <header class="dropdown-menu">
+                <button class="menuBtn">Menu</button>
+                <nav class="dropdown-options">
+                    <!-- unordered list of menu options -->
+                    <ul>
+                        <!-- link to menu option webpages -->
+                        <li><a href="save-for-later.html">Earmarked Items</a></li>
+                        <li><a href="help.html">You can help!</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <br><br><br>
+            <!-- POST form -->
+            <div id="contactForm">
+                <form action="/contact-us.html" method="POST">
+                    <label class="underlineBlue" style="font-size: xx-large;">
+                        <b>
+                            CONTACT FORM
+                        </b>
+                    </label>
+                    <br><br>
+                    <!-- radio buttons for user selection -->
+                    <!-- options share the same 'name' attribute so only one option can be selected at a time  -->
+                    <div id="radio-group">
+                        <label>User selection:</label>
+                        <br>
+                        <input type="radio" id="user1" name="userSelection" value="Survivor">
+                        <label for="user1">I am a survivor</label>
+                        <br>
+                        <input type="radio" id="user2" name="userSelection" value="Survivor supporter">
+                        <label for="user2">I am a survivor supporter </label>
+                        <br>
+                        <input type="radio" id="user3" name="userSelection" value="Aspiring survivor supporter">
+                        <label for="user3">I want to be a survivor supporter </label>
+                    </div>
+                    <br>
+
+                    <!-- user information -->
+                    <label for="contactName">First name:</label><br>
+                    <input type="text" id="contactName" required><br><br>
+                    <label for="contactSurname">Surname:</label><br>
+                    <input type="text" id="contactSurname" required><br><br>
+                    <label for="contactEmail">Email address:</label><br>
+                    <input type="email" id="contactEmail" required><br><br>
+                    <label for="contactMessage">Message:</label><br>
+                    <textarea id="contactMessage" rows="4" cols="35" style="font-family: 'Gill Sans', sans-serif;"
+                        required></textarea>
+                    <br><br>
+                    <button type="button" style="width: 325px; height: 70px; font-size: 30px;" class="submitButton"
+                        onclick="submitMessage()">
+                        <b>
+                            SUBMIT
+                        </b>
+                    </button>
+                    <br><br>
+                </form>
+            </div>
+            <br><br>
+        </main>
+
+        <!-- bottom of webpage -->
+        <footer>
+            <br><br>
+            <div id="closing">
+                <!-- logo -->
+                <img class="logo" src="images/logo.png" alt="Seen & Heard logo" width="175" />
+                <h2 id="contactPrompt">
+                    <a href="contact-us.html">CONTACT US</a>
+                </h2>
+                <address id="copy">
+                    <h5>
+                        Made by <i>Jediah Jireh Naicker</i>
+                        <br>
+                        &copy; 2024
+                    </h5>
+                </address>
+            </div>
+        </footer>
+    </div>
+    <!-- link to JS file -->
+    <script type="text/javascript" src="functionality.js"></script>
+    <!-- link to js file for contact us functionality -->
+    <script type="text/javascript" src="contact-us.js"></script>
+</body>
+
+</html>
