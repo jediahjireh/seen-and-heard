@@ -14,7 +14,7 @@ Passion meets purpose in our fight against human-trafficking at *Seen & Heard*. 
 ### Our logo
 The figures holding hands represent people of diverse backgrounds in a display of unity. The colours – *red and yellow, black and white* are inspired by the message love from the song *"Jesus Loves the Little Children"*. The animation of the figures jumping up and down together embodies our spirit of solidarity and support of one another.
 
-**"Jesus Loves the Little Children" Song Lyrics:**  
+#### **"Jesus Loves the Little Children" Song Lyrics:**  
 *Jesus loves the little children,  
 All the children of the world,  
 Red and yellow, black and white,  
