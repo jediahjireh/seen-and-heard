@@ -14,7 +14,7 @@ Passion meets purpose in our fight against human-trafficking at *Seen & Heard*. 
 ### Our logo
 The figures holding hands represent people of diverse backgrounds in a display of unity. The colours – *red and yellow, black and white* are inspired by the message love from the song *"Jesus Loves the Little Children"*. The animation of the figures jumping up and down together embodies our spirit of solidarity and support of one another.
 
-#### *__Jesus Loves the Little Children Song Lyrics__*  
+**"Jesus Loves the Little Children" Song Lyrics:**  
 *Jesus loves the little children,  
 All the children of the world,  
 Red and yellow, black and white,  
@@ -32,25 +32,25 @@ Ready to join the fight? Follow these steps to run the *Seen & Heard* website lo
 
 After installing this project, open the ‘index.html’ file in your web browser (ideally Google Chrome) and navigate freely through the website, keeping the guidelines below in mind:
 
-#### 1. Homepage:
+#### **1. Homepage:**
 Feel the pulse of our movement with powerful imagery, impactful messages and information that drives our mission forward. Be inspired to bridge the gap.
 
-#### 2. About Us:
+#### **2. About Us:**
 Our organisation's commitment to raising awareness, advocating for justice and providing support to survivors is highlighted on this webpage.
 
-#### 3. Save for Later:
+#### **3. Save for Later:**
 Preserve knowledge by saving images and articles for future reference.
 
-#### 4. Contact Us:
+#### **4. Contact Us:**
 Reach out and connect with us through the contact form or subscribe to our newsletters. Your voice matters — we're always here to listen and ever-willing to provide support!
 
-#### 5. How To Help:
+#### **5. How To Help:**
 Explore resources and initiatives aimed at combatting trafficking through various sectors. Together, we can educate, empower and effect change.
 
-#### 6. Comments:
+#### **6. Comments:**
 You are welcome to provide feedback and encouraged to share your experiences and insights. Your words have the power to inspire. Your words have the power to uplift. Your words could make all the difference.
 
-#### Additional usage notes
+#### **Additional usage notes**
 
 Take the time to understand the gravity of human-trafficking and acknowledge the unimaginable situations those entrapped in its nets endure. Educating yourself is a vital step towards combating this heinous crime and supporting survivors — lives hang in the balance.
 
