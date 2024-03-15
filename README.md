@@ -24,7 +24,7 @@ Jesus loves the little children of the world.*
 ## Installation
 
 Ready to join the fight? Follow these steps to run the *Seen & Heard* website locally:
-1. Clone the repository to your local machine using ‘git clone https://github.com/jediahjireh/seen-and-heard.git’.
+1. Clone the repository to your local machine using ‘git clone https://github.com/jediahjireh/seen-and-heard.git ’.
 2. Navigate to the project directory in your terminal.
 3. Open the index.html file in your web browser to view this project.
 
